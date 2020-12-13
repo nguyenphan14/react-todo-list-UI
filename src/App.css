@@ -1,10 +1,73 @@
 .App {
-  text-align: center;
+  margin: 10rem auto;
+  border: 1px solid #ddd;
+  width: 500px;
+  box-shadow: 6px 10px 30px -7px rgba(50, 50, 50, 0.7);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App .Header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #dfddddc0;
+  padding: 1.2rem 1rem;
+}
+
+.App .Header input {
+  margin-left: 1rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+}
+
+.App .Header input::placeholder {
+  opacity: .3;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.allComplete {
+  opacity: 0.3;
+}
+
+.allCompleted {
+  opacity: 1;
+}
+
+.Filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.Filter .Filter__State {
+  list-style-type: none;
+  display: flex;
+}
+
+.Filter .Filter__State li {
+  padding: 0 0.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.Filter .Filter__State li:hover {
+  border: 1px solid #2196f3;
+}
+
+.Filter .Filter__Clear {
+  cursor: pointer;
+}
+
+.Filter .Filter__Clear:hover {
+  color: red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
